@@ -1,5 +1,7 @@
 package entities;
 
+//Classe responsável pelos nomes dos departamentos
+
 public class Department {
 	
 	private String name;
@@ -20,5 +22,4 @@ public class Department {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 }
