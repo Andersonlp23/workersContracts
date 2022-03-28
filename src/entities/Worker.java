@@ -83,8 +83,10 @@ public class Worker {
 	public double income(int year, int month) {
 		double sum = baseSalary;
 		Calendar cal = Calendar.getInstance();
+
 		// Para cada contrato c na lista de contrato
 		for (HourContract c : contracts) {
+
 			// Pegando a data do contato e definindo como a data do calendário
 			cal.setTime(c.getDate());
 			int c_year = cal.get(Calendar.YEAR);
@@ -94,7 +96,7 @@ public class Worker {
 
 			}
 		}
-		
+
 		return sum;
 	}
 }
