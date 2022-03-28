@@ -43,4 +43,9 @@ public class HourContract {
 	public void setHours(Integer hours) {
 		this.hours = hours;
 	}
+	
+	//Metodo responsável por calcular a quantidade de horas do contrato
+	public double totalValue() {
+		return valuePerHour * hours;
+	}
 }
